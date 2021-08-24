@@ -1,6 +1,7 @@
 setwd("C:/corpus_final"); getwd()
 library(wordcloud)
 library(AMR)
+library(ca)
 
 # reference corpus - frequency table
 ref_cor <- read.delim(file = "10_Sejong_Freq.txt", header = T,
