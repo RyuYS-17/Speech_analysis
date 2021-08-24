@@ -27,7 +27,7 @@ for (company in c("Hanhwa", "LG")) {
                  encoding = "UTF-8", what = "char", quote = NULL)
     word <- unlist(strsplit(word, "[+]"))
     word.freq <- data.frame(sort(table(word), decreasing = T))
-    word.freq <- word.freq[grep("/NNG|/NNP|/VV|/VA|/MAG|SL", word.freq$word),]
+    word.freq <- word.freq[grep("/NNG|/NNP|/VV|/VA|/MAG|/SL", word.freq$word),]
     print(paste(company, year))
     print(head(word.freq, 20))
   }
@@ -119,7 +119,7 @@ for (company in c("Hanhwa", "LG")){
                  encoding = "UTF-8", what = "char", quote = NULL)
     word <- unlist(strsplit(word, "[+]"))
     word <- word[!(word %in% stopword)]
-    word <- word[grep("/NNG|/NNP|/VV|/VA|/MAG|SL", word)]
+    word <- word[grep("/NNG|/NNP|/VV|/VA|/MAG|/SL", word)]
     TDM <- merge(TDM, data.frame(table(word)),
                  by.x="word", by.y = "word", all = T)
     colnames(TDM)[length(TDM)] <- year
