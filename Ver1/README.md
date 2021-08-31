@@ -5,11 +5,11 @@
 #### 진행기간: 2020년 12월
 
 #### 사용개념
-1. 대응분석(Corresponding Analysis)
-2. 워드클라우드(Wordcloud, Comparison Wordcloud)
-3. N-gram (Uni-gram, Bi-gram)
-4. 카이 제곱 잔차
-5. MI-score를 이용한 연어분석
+> 1. 대응분석(Corresponding Analysis)
+> 2. 워드클라우드(Wordcloud, Comparison Wordcloud)
+> 3. N-gram (Uni-gram, Bi-gram)
+> 4. 카이 제곱 잔차
+> 5. MI-score를 이용한 연어분석
 
 
 
